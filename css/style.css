@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #fff;
+    background-color: seashell;
     color: #000;
     font-size: 100%;
 }
@@ -47,8 +47,7 @@ li {
 }
 
 li:hover {
-    background-color: #009000;
-
+    background-color: rgba(71, 170, 71, 0.952);
 }
 
 li a {
@@ -65,6 +64,14 @@ li a {
     background-color: #009000;
 }
 
+.sub li a {
+    padding: .5rem;
+}
+
+.sub li:hover {
+    background-color: rgba(71, 170, 71, 0.952);
+}
+
 li:hover .sub {
     display: block;
 }
@@ -77,4 +84,16 @@ li:hover .sub {
     .menu {
         display: none;
     }
+
+}
+
+footer {
+    background-color: green;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    position: sticky;
+    left: 0;
+    right: 0;
+    padding: .5rem 1rem;
 }
