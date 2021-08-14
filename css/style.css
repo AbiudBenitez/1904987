@@ -6,15 +6,38 @@
 }
 
 body {
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     font-size: 100%;
 }
 
-@media screen and (max-width: 800px) {
-    body {
-        background-color: #FFF;
-        color: #000;
-        font-size: 0.8rem;
-    }
+header {
+    background-color: green;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    display: grid;
+}
+
+.nombre {
+    margin-bottom: 0.7rem;
+}
+
+.menu {
+    width: auto;
+    margin: auto;
+}
+
+nav ul li {
+    list-style: none;
+    float: left;
+    padding: .8rem 3rem .8rem 3rem;
+    border-right: oldlace;
+    border-left: oldlace;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
 }
