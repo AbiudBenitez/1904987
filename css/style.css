@@ -89,6 +89,7 @@ li:hover .sub {
 
 footer {
     background-color: green;
+    font-weight: bold;
     margin: auto;
     text-align: center;
     color: #fff;
