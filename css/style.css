@@ -9,6 +9,7 @@
 :root {
   --color1: #009000;
   --colorh: rgba(71, 170, 71, 0.952);
+  --colorw: #ffffff;
 }
 
 body {
@@ -119,7 +120,28 @@ li:hover .sub {
   text-align: center;
 }
 
+.container {
+  margin: 1.5rem;
+}
+
+.container-grid {
+  margin: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  gap: 1rem;
+}
+
+.container section,
+.container-grid section {
+  background-color: var(--color1);
+  padding: 1rem;
+  text-align: center;
+  color: var(--colorw);
+  border-radius: 10px;
+}
+
 .nav-bar {
+  margin-top: 10px;
   display: flex;
   justify-content: space-around;
 }
