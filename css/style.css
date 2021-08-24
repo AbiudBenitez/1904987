@@ -108,11 +108,11 @@ li:hover .sub {
 }
 
 .info section ul li {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .info img {
-  width: 230px;
+  max-width: 230px;
   border-radius: 5px;
 }
 
@@ -176,7 +176,7 @@ footer {
   padding: 0.5rem 1rem;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 767px) {
   body {
     font-size: 0.8rem;
   }
@@ -194,7 +194,7 @@ footer {
   }
 
   .info section {
-    display: block;
+    flex-direction: column;
   }
 
   .info section ul li {
