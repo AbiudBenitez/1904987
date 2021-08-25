@@ -204,4 +204,16 @@ footer {
   .info section ul li {
     font-size: 1em;
   }
+
+  .container-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .container-grid .info2 {
+    display: none;
+  }
+
+  section img {
+    max-width: 80%;
+  }
 }
