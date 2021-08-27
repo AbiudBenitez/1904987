@@ -144,6 +144,10 @@ li:hover .sub {
   text-align: justify;
 }
 
+.tcenter {
+  text-align: center;
+}
+
 .nav-bar {
   margin-top: 10px;
   display: flex;
