@@ -10,6 +10,7 @@
   --color1: #009000;
   --colorh: rgba(71, 170, 71, 0.952);
   --colorw: #ffffff;
+  --colorb: #000000;
 }
 
 body {
@@ -146,6 +147,23 @@ li:hover .sub {
 
 .tcenter {
   text-align: center;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 1.5rem;
+  padding: 1.5rem;
+  background-color: var(--color1);
+}
+
+.button {
+  padding: 1rem;
+  background-color: var(--colorw);
+  color: var(--colorb);
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .nav-bar {
