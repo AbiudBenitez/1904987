@@ -9,12 +9,12 @@
 :root {
   --color1: #009000;
   --colorh: rgba(71, 170, 71, 0.952);
-  --colorw: #ffffff;
+  --colorw: #fff5ee;
   --colorb: #000000;
 }
 
 body {
-  background-color: seashell;
+  background-color: var(--colorw);
   color: #000;
   font-size: 100%;
 }
@@ -150,11 +150,24 @@ li:hover .sub {
 }
 
 .nav-buttons {
-  display: flex;
-  justify-content: space-around;
   margin: 1.5rem;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
   padding: 1.5rem;
   background-color: var(--color1);
+}
+
+.nav-buttons button {
+  width: 100%;
+  border: none;
+  font-size: 1em;
+  text-align: left;
+}
+
+.nav-buttons .last {
+  grid-column: 1/-1;
 }
 
 .button {
@@ -237,5 +250,9 @@ footer {
 
   section img {
     max-width: 80%;
+  }
+
+  .button {
+    padding: 0.5rem;
   }
 }
