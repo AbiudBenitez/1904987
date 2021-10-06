@@ -51,14 +51,14 @@ img {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.menu li {
+.menu > li {
   list-style: none;
   font-weight: bold;
   position: relative;
   transition: all 0.8s ease;
 }
 
-li:hover {
+.menu > li:hover {
   background-color: var(--colorh);
 }
 
@@ -78,7 +78,7 @@ li a {
 }
 
 .sub li a {
-  padding: 0.5rem;
+  padding: 0.3rem;
 }
 
 .sub li:hover {
@@ -141,12 +141,21 @@ li:hover .sub {
   border-radius: 10px;
 }
 
+.container .hw {
+  text-align: justify;
+  font-size: 1em;
+}
+
 .container-grid .bio {
   text-align: justify;
 }
 
 .tcenter {
   text-align: center;
+}
+
+.list1 {
+  margin-left: 2rem;
 }
 
 .nav-buttons {
