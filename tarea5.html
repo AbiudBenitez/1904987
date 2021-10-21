@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/icon.png" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/footer.css" />
     <script
       src="https://kit.fontawesome.com/6d08f8c88b.js"
       crossorigin="anonymous"
@@ -67,14 +66,152 @@
     </main>
     <section class="container">
       <section class="hw">
-        <h4 class="tcenter"></h4>
+        <h4 class="tcenter">Prolog</h4>
+        <br />
+        <p>
+          Lenguaje de programación lógico e interpretado (Prolog). La
+          programación lógica es un paradigma de los lenguajes de programación
+          en el cual los programas se consideran como una serie de aserciones
+          lógicas. De esta forma, el conocimiento se representa mediante reglas,
+          tratándose de sistemas declarativos.
+        </p>
         <br />
         <h4>Simbolo</h4>
+        <p>
+          Los operadores de Prolog están divididos en dos clases: aritméticos y
+          relacionales.
+        </p>
+        <p>
+          Los operadores aritméticos incluyen los símbolos para suma, resta,
+          multiplicación y división . En Prolog, si dos enteros son sumados,
+          restados o multiplicados, el resultado será un entero. Siempre que uno
+          de los operandos, en cualquiera de estas operaciones sea un número
+          real, el resultado siempre será un real. El resultado de una división,
+          siempre que los operandos sean enteros o reales, será siempre real.
+        </p>
+        <h5>ARITMÉTICOS</h5>
+        <p>
+          Todas las versiones de Prolog soportan los siguientes operadores
+          aritméticos, listados en el orden de prioridad de ejecución.
+        </p>
+        <ul class="list1">
+          <li>+ --> SUMA</li>
+          <li>- --> RESTA</li>
+          <li>* --> MULTIPLICACIÓN</li>
+          <li>/ --> DIVISIÓN</li>
+          <li>// --> DIVISION ENTERA</li>
+          <li>MOD --> RESIDUO</li>
+          <li>^ --> POTENCIA</li>
+        </ul>
+        <h5>RELACIONALES</h5>
+        <p>Prolog soporta los siguientes operadores relacionales:</p>
+        <ul class="list1">
+          <li>= --> IGUAL QUE</li>
+          <li>> --> MAYOR QUE</li>
+          <li>>= --> MAYOR O IGUAL QUE</li>
+          <li>>= --> MENOR O IGUAL QUE|</li>
+          <li><> --> DESIGUAL QUE</li>
+          <li>=/= --> DIFERENTE QUE</li>
+          <li>is --> EVALUADOR DE EXPRESIÓN</li>
+          <li>seed --> GENERADOR DE NÚMEROS ALEATORIOS</li>
+        </ul>
+        <br />
         <h4>Sintaxis</h4>
-        <h4>Esqueletos de los progrmas</h4>
+        <p>
+          Las sentencias de Prolog son cláusulas de Horn escritas con una
+          sintaxis propia. Entre otras cosas, la sintaxis de Prolog difiere de
+          la que venimos utilizando en que las constantes se escriben con
+          minúscula (o empezando con minúscula) y las variables con mayúscula (o
+          empezando con mayúscula). Hay tres tipos de sentencias:
+        </p>
+        <p>
+          Los hechos son cláusulas determinadas con un solo literal en el que
+          únicamente figuran constantes. En el ejemplo:
+        </p>
+        <p>sobre(a,b).</p>
+        <p>sobre(b,c).</p>
+        <p>sobre(d,e).</p>
+        <p>
+          Las reglas son cláusulas determinadas con al menos un literal
+          negativo. La cláusula:
+        </p>
+        <p>
+          ¬p1(x,y...) \/ ¬p2(x,y...) \/ ... \/ q(x,y...) =_ p1(x,y...) /\
+          p2(x,y...)... ==> q(x,y...)
+        </p>
+        <p>se escribe con la sintaxis:</p>
+        <p>q(X,Y...) :- p1(X,Y...),p2(X,Y...).</p>
+        <p>que se lee: «q(X,Y...) si p1(X,Y...) y p2(X,Y...) y...»</p>
+        <br />
+        <h4>Esqueletos de los programas</h4>
+        <p>
+          Existen diferentes formas de representar estructuras. Estas est´an
+          definidas por su nombre y n´umero de argumentos: functor/arity.
+        </p>
+        <p>curso(prolog,lunes,9,12,eduardo,morales,ccc,8301).</p>
+        <p>vs</p>
+        <p>
+          curso(prolog,horario(lunes,9,12),profesor(eduardo,morales),lugar(ccc,8301)).
+        </p>
+        <br />
+        <p>maestro(Materia,Maestro):-</p>
+        <p>curso(Materia,Horario,Maestro,Lugar).</p>
+        <p>duracion(Materia,Tiempo):-</p>
+        <p>curso(Materia,horario(Dia,TiempoI,TiempoF),Profesor,Lugar),</p>
+        <p>suma(TiempoI,Tiempo,TiempoF).</p>
+        <p>vs</p>
+        <p>dia(prolog,lunes)</p>
+        <p>tiempoI(prolog,9).</p>
+        <p>tiempoF(prolog,12).</p>
+        <p>profesor_nombre(prolog,eduardo).</p>
+        <p>...</p>
+        <br />
         <h4>Aplicaciones a descargar para editar y ejecutar</h4>
+        <p>
+          El shell de Prolog es una aplicación que permite ejecutar objetivos y
+          ver las ligaduras de las variables de manera interactiva. Pueden
+          existir diferencias entre unos entornos de desarrollo y otros respecto
+          a su uso. Para ilustrar su uso, nosotros utilizaremos el shell de
+          Ciao/Prolog.
+        </p>
+        <br />
         <h4>Tipo de paradigma</h4>
+        <p>
+          Prolog es del tipo de paradigma de programación lógica, ya que, los
+          programas se consideran como una serie de aserciones logicas.
+        </p>
+        <br />
         <h4>Ejemplo:</h4>
+        <pre>
+          acepta(Edo,[]) :-
+              final(Edo).
+          acepta(Edo,[H|T]) :-
+              trans(Edo,H,NEdo),
+              acepta(NEdo,T).
+          acepta(Edo,String) :-
+              trans_vacio(Edo,NEdo),
+              acepta(NEdo,String).
+
+          e.g.,
+          trans(s1,0,s1). trans(s1,1,s2).
+          trans(s1,0,s4). trans(s2,0,s2).
+          trans(s2,0,s3). trans(s3,1,s5).
+          trans_vacio(s4,s2). final(s5).
+
+          ?- acepta(s1,[0,1,0,1]).
+          yes
+          ?- acepta(X,[0,0,1]).
+          X = s1;
+          X = s2;
+          X = s4
+          ?- acepta(s1,[X,Y,Z]).
+          X = 1, Y = 0, Z = 1;
+          X = 0, Y = 0, Z = 1
+
+          ?- Sol = [_,_,_], acepta(s1, Sol).
+          Sol = [1,0,1];
+          Sol = [0,0,1]</pre
+        >
       </section>
     </section>
     <div class="nav-bar">
