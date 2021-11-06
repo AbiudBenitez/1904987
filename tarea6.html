@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/icon.png" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/footer.css" />
     <script
       src="https://kit.fontawesome.com/6d08f8c88b.js"
       crossorigin="anonymous"
@@ -60,28 +59,148 @@
         <li><a href="#">Contacto</a></li>
       </nav>
     </header>
-    <main class="container">
-      <section class="title">
+    <main class="container2">
+      <section class="tcenter">
         <h3>Tarea #6</h3>
       </section>
     </main>
-    <section class="container">
+    <section class="container2">
       <section class="hw">
         <h4 class="tcenter">Python</h4>
         <br />
-        <p></p>
+        <p>
+          Python es un lenguaje de programación de alto nivel que se utiliza
+          para desarrollar aplicaciones de todo tipo. A diferencia de otros
+          lenguajes como Java o .NET, se trata de un lenguaje interpretado, es
+          decir, que no es necesario compilarlo para ejecutar las aplicaciones
+          escritas en Python, sino que se ejecutan directamente por el ordenador
+          utilizando un programa denominado interpretador, por lo que no es
+          necesario “traducirlo” a lenguaje máquina.
+        </p>
         <br />
         <h4>Simbolo</h4>
+        <p>
+          Una de las operaciones más básicas cuando se trabaja con cadenas de
+          caracteres es la concatenación. Esto consiste en unir dos cadenas en
+          una sola, siendo el resultado un nuevo string.
+        </p>
+        <p>
+          La forma más simple de concatenar dos cadenas en Python es utilizando
+          el operador de concatenación +:
+        </p>
+        <pre>
+          >>> hola = 'Hola'
+          >>> python = 'Pythonista'
+          >>> hola_python = hola + ' ' + python  # concatenamos 3 strings
+          >>> print(hola_python)
+          Hola Pythonista
+        </pre>
+        <br />
+        <h5>Operadores lógicos o booleanos</h5>
+        <p>
+          A la hora de operar con valores booleanos, tenemos a nuestra
+          disposición los operadores and, or y not.
+        </p>
+        <pre>
+          >>> x = True
+          >>> y = False
+          >>> x or y
+          True
+        </pre>
+        <br />
+        <h5>Operadores de comparación</h5>
+        <p>
+          Los operadores de comparación se utilizan, como su nombre indica, para
+          comparar dos o más valores. El resultado de estos operadores siempre
+          es True o False.
+        </p>
+        <pre>
+          >>> x = 9
+          >>> y = 1
+          >>> x < y
+          False
+          >>> x > y
+          True
+          >>> x == y
+          False
+        </pre>
+        <br />
+        <h5>Operadores aritméticos en Python</h5>
+        <p>
+          En cuanto a los operadores aritméticos, estos permiten realizar las
+          diferentes operaciones aritméticas del álgebra: suma, resta, producto,
+          división, … Estos operadores Python son de los más utilizados.
+        </p>
+        <pre>
+          >>> x = 7
+          >>> y = 2
+          >>> x + y  # Suma
+          9
+          >>> x - y  # Resta
+          5
+          >>> x * y  # Producto
+          14
+          >>> x / y  # División
+          3.5
+          >>> x % y  # Resto
+          1
+          >>> x // y  # Cociente
+          3
+          >>> x ** y  # Potencia
+          49
+        </pre>
         <br />
         <h4>Sintaxis</h4>
+        <p>Comentarios : detrás de #</p>
+        <p>Asignación : se usa =</p>
+        <p>Ej:</p>
+        <p>>>> a=3+2J</p>
+        <p>>>> # Esto es un comentario</p>
+        <p>Definición de funciones:</p>
+        <p>>>>def nombrefunción(arg1,arg2..):</p>
+        <pre>   instrucción1</pre>
+        <pre>   instrucción2</pre>
+        <pre>   instrucciónN</pre>
+        <p>
+          La indentación delimita qué instrucciones pertenecen a la función.
+        </p>
         <br />
         <h4>Esqueletos de los progrmas</h4>
+        <p>
+          Normalmente, el lenguaje de programacion de python no tiene un
+          esqueleto en especifico, ya que, se puede programar sin la necesidad
+          de tener algo antes de nuestro codigo, sin embargo si cuenta con
+          normas de sintaxis las cuales se deben de respetar para poder
+          programar, por ejemplo, se debe de tener unos espacios entre algunas
+          de las lineas de codigo, debido a que estos representan cosas en el
+          lenguaje de programacion a diferencia de otros que no necesitan
+          estrictamente de estos.
+        </p>
         <br />
         <h4>Aplicaciones a descargar para editar y ejecutar</h4>
+        <p>
+          Para poder codificar en python bassta con tener su IDLE la cual se
+          puede descargar desde la pagina oficial de python en la web, y desde
+          esta se puede usar el bash para poder hacer codigo rapido o el IDLE
+          directamente para poder crear archivos .py los cuales pueden ser
+          procesados por la maquina.
+        </p>
         <br />
         <h4>Tipo de paradigma</h4>
+        <p>
+          Python es un lenguaje de programación multiparadigma. Esto significa
+          que más que forzar a los programadores a adoptar un estilo particular
+          de programación, permite varios estilos: programación orientada a
+          objetos, programación imperativa y programación funcional. Otros
+          paradigmas están soportados mediante el uso de extensiones.
+        </p>
         <br />
         <h4>Ejemplo:</h4>
+        <pre>
+          n = int(input("Introduce un número entero positivo: "))
+          for i in range(1, n+1, 2):
+          print(i, end=", ")
+        </pre>
       </section>
     </section>
     <div class="nav-bar">
