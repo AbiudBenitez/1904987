@@ -152,6 +152,12 @@ li:hover .sub {
   border-radius: 10px;
 }
 
+.bio > img {
+  width: 50%;
+  display: flex;
+  align-self: center;
+}
+
 .container .hw {
   text-align: justify;
   font-size: 1em;
