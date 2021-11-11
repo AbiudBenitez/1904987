@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/icon.png" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/footer.css" />
     <script
       src="https://kit.fontawesome.com/6d08f8c88b.js"
       crossorigin="anonymous"
     ></script>
-    <title>Tarea #5</title>
+    <title>Tarea #14</title>
   </head>
   <body>
     <header>
@@ -60,27 +59,282 @@
         <li><a href="#">Contacto</a></li>
       </nav>
     </header>
-    <main class="container">
-      <section class="title">
-        <h3>Tarea #5</h3>
+    <main class="container2">
+      <section class="tcenter">
+        <h3>Tarea #14</h3>
       </section>
     </main>
-    <section class="container">
+    <section class="container2">
       <section class="hw">
-        <h4 class="tcenter"></h4>
+        <h4 class="tcenter">SQL</h4>
+        <p>
+          SQL (por sus siglas en inglés Structured Query Language; en español
+          lenguaje de consulta estructurada) es un lenguaje de dominio
+          específico, diseñado para administrar, y recuperar información de
+          sistemas de gestión de bases de datos relacionales.2​ Una de sus
+          principales características es el manejo del álgebra y el cálculo
+          relacional para efectuar consultas con el fin de recuperar, de forma
+          sencilla, información de bases de datos, así como realizar cambios en
+          ellas.
+        </p>
+        <p>
+          Originalmente basado en el álgebra relacional y en el cálculo
+          relacional, SQL consiste en un lenguaje de definición de datos, un
+          lenguaje de manipulación de datos y un lenguaje de control de datos.
+          El alcance de SQL incluye la inserción de datos, consultas,
+          actualizaciones y borrado, la creación y modificación de esquemas y el
+          control de acceso a los datos. También el SQL a veces se describe como
+          un lenguaje declarativo, también incluye elementos procesales.
+        </p>
         <br />
         <h4>Simbolo</h4>
+        <p>
+          SQL es un lenguaje de acceso a bases de datos que explota la
+          flexibilidad y potencia de los sistemas relacionales y permite así
+          gran variedad de operaciones.6​
+        </p>
+        <p>
+          Es un lenguaje declarativo de "alto nivel" o "de no procedimiento"
+          que, gracias a su fuerte base teórica y su orientación al manejo de
+          conjuntos de registros —y no a registros individuales— permite una
+          alta productividad en codificación y la orientación a objetos. De esta
+          forma, una sola sentencia puede equivaler a uno o más programas que se
+          utilizarían en un lenguaje de bajo nivel orientado a registros. SQL
+          también tiene las siguientes características:
+        </p>
+        <ul class="list1">
+          <li>
+            Lenguaje de definición de datos: El LDD de SQL proporciona comandos
+            para la definición de esquemas de relación, borrado de relaciones y
+            modificaciones de los esquemas de relación.
+          </li>
+          <li>
+            Lenguaje interactivo de manipulación de datos: El LMD de SQL incluye
+            lenguajes de consultas basado tanto en álgebra relacional como en
+            cálculo relacional de tuplas.
+          </li>
+          <li>
+            Integridad: El LDD de SQL incluye comandos para especificar las
+            restricciones de integridad que deben cumplir los datos almacenados
+            en la base de datos.
+          </li>
+          <li>
+            Definición de vistas: El LDD incluye comandos para definir las
+            vistas.
+          </li>
+          <li>
+            Control de transacciones: SQL tiene comandos para especificar el
+            comienzo y el final de una transacción.
+          </li>
+          <li>
+            SQL incorporado y dinámico: Esto quiere decir que se pueden
+            incorporar instrucciones de SQL en lenguajes de programación como:
+            C++, C, Java, PHP, COBOL, Pascal y Fortran.
+          </li>
+          <li>
+            Autorización: El LDD incluye comandos para especificar los derechos
+            de acceso a las relaciones y a las vistas.
+          </li>
+        </ul>
+        <br />
+        <p>Tipos de datos</p>
+        <p>Algunos de los tipos de datos básicos de SQL son:</p>
+        <ul class="list1">
+          <li>
+            Varchar: Recibe cadena de palabras compuestas de letras, números y
+            caracteres especiales.
+          </li>
+          <li>
+            Time: La hora del día en horas minutos segundos (el valor
+            predeterminado es 0).
+          </li>
+          <li>
+            Int es el principal tipo de datos de valores enteros de SQL Server.
+            Con números enteros con o sin signo
+          </li>
+          <li>
+            Date: una fecha de calendario que contiene el año (de cuatro
+            cifras), el mes y el día.
+          </li>
+        </ul>
+        <br />
         <h4>Sintaxis</h4>
+        <p>
+          El lenguaje de definición de datos (en inglés Data Definition
+          Language, o DDL), es el que se encarga de la modificación de la
+          estructura de los objetos de la base de datos. Incluye órdenes para
+          modificar, borrar o definir las tablas en las que se almacenan los
+          datos de la base de datos. Existen cuatro operaciones básicas: CREATE,
+          ALTER, DROP y TRUNCATE.7​
+        </p>
+        <br />
+        <p>CREATE</p>
+        <p>
+          Este comando permite crear objetos de datos, como nuevas bases de
+          datos, tablas, vistas y procedimientos almacenados.
+        </p>
+        <p>ALTER</p>
+        <p>
+          Este comando permite modificar la estructura de una tabla u objeto. Se
+          pueden agregar/quitar campos a una tabla, modificar el tipo de un
+          campo, agregar/quitar índices a una tabla, modificar un trigger, etc.
+        </p>
+        <p>DROP</p>
+        <p>
+          Este comando elimina un objeto de la base de datos. Puede ser una
+          tabla, vista, índice, trigger, función, procedimiento o cualquier
+          objeto que el motor de la base de datos soporte. Se puede combinar con
+          la sentencia ALTER.
+        </p>
+        <p>TRUNCATE</p>
+        <p>
+          Este comando solo aplica a tablas y su función es borrar el contenido
+          completo de la tabla especificada. La ventaja sobre el comando DELETE,
+          es que si se quiere borrar todo el contenido de la tabla, es mucho más
+          rápido, especialmente si la tabla es muy grande. La desventaja es que
+          TRUNCATE solo sirve cuando se quiere eliminar absolutamente todos los
+          registros, ya que no se permite la cláusula WHERE. Si bien, en un
+          principio, esta sentencia parecería ser DML (Lenguaje de Manipulación
+          de Datos), es en realidad una DDL, ya que internamente, el comando
+          TRUNCATE borra la tabla y la vuelve a crear y no ejecuta ninguna
+          transacción.
+        </p>
+        <br />
+        <p>
+          Lenguaje de manipulación de datos DML (Data Manipulation Language)
+        </p>
+        <p>
+          Un lenguaje de manipulación de datos (Data Manipulation Language, o
+          DML en inglés) es un lenguaje proporcionado por el sistema de gestión
+          de base de datos que permite a los usuarios llevar a cabo las tareas
+          de consulta o manipulación de los datos, organizados por el modelo de
+          datos adecuado.7​
+        </p>
+        <br />
+        <p>SELECT</p>
+        <p>
+          La sentencia SELECT nos permite consultar los datos almacenados en una
+          tabla de la base de datos.
+        </p>
+        <p>WHERE</p>
+        <p>
+          La cláusula WHERE es la instrucción que nos permite filtrar el
+          resultado de una sentencia SELECT. Habitualmente no deseamos obtener
+          toda la información existente en la tabla, sino que queremos obtener
+          solo la información que nos resulte útil en ese momento. La cláusula
+          WHERE filtra los datos antes de ser devueltos por la consulta. Cuando
+          en la Cláusula WHERE queremos incluir un tipo texto, debemos incluir
+          el valor entre comillas simples.
+        </p>
+        <p>ORDER BY</p>
+        <p>
+          La cláusula ORDER BY es la instrucción que nos permite especificar el
+          orden en el que serán devueltos los datos. Podemos especificar el
+          orden de forma ascendente o descendente a través de las palabras clave
+          ASC y DESC. El orden depende del tipo de datos que estén definidos en
+          la columna, de forma que un campo numérico será ordenado como tal, y
+          un alfanumérico se ordenará de la A a la Z, aunque su contenido sea
+          numérico. El valor predeterminado es ASC si no se especifica al hacer
+          la consulta.
+        </p>
+        <p>INSERT</p>
+        <p>
+          Una sentencia INSERT de SQL agrega uno o más registros a una (y solo
+          una) tabla en una base de datos relacional.
+        </p>
+        <p>UPDATE</p>
+        <p>
+          Una sentencia UPDATE de SQL es utilizada para modificar los valores de
+          un conjunto de registros existentes en una tabla.
+        </p>
+        <p>DELETE</p>
+        <p>
+          Una sentencia DELETE de SQL borra uno o más registros existentes en
+          una tabla.
+        </p>
+        <br />
         <h4>Esqueletos de los progrmas</h4>
+        <pre>
+          SELECT [{ALL|DISTINCT}]
+              &lg;nombre_campo&gl;[, &lg;nombre_campo&gl;...]
+              
+          FROM {&lg;nombre_tabla&gl;|&lg;nombre_vista&gl;}[,
+              {&lg;nombre_tabla&gl;|&lg;nombre_vista&gl;}...]
+              
+          [WHERE &lg;condición&gl; [{AND|OR} &lg;condición&gl;...]]
+              
+          [GROUP BY &lg;nombre_campo&gl;[, &lg;nombre_campo&gl;...]]
+          
+          [HAVING &lg;condición&gl; [{AND|OR} &lg;condición&gl;...]]
+          
+          [ORDER BY {&lg;nombre_campo&gl;|&lg;indice_campo&gl;} [{ASC|DESC}][,
+              {&lg;nombre_campo&gl;|&lg;indice_campo&gl;} [{ASC|DESC}]]];
+        </pre>
+        <br />
         <h4>Aplicaciones a descargar para editar y ejecutar</h4>
+        <p>
+          Los sistemas de gestión de base de datos con soporte SQL más
+          utilizados son, por orden alfabético:
+        </p>
+        <ul class="list1">
+          <li>DB2</li>
+          <li>Firebird</li>
+          <li>HSQL</li>
+          <li>Informix</li>
+          <li>InterBase</li>
+          <li>MariaDB</li>
+          <li>Microsoft SQL Server</li>
+          <li>MySQL</li>
+          <li>Oracle</li>
+          <li>PostgreSQL</li>
+          <li>PervasiveSQL</li>
+          <li>SQLite</li>
+          <li>Sybase ASE</li>
+        </ul>
+        <br />
         <h4>Tipo de paradigma</h4>
+        <p>
+          Este no es exactamente un lenguaje de programacion, es mejor llamarlo
+          lenguaje de consulta estructurada como su nombre lo dice y de esta
+          misma manera es un lenguaje orientado especialmente a la consulta y
+          creacion de bases de datos y tambien uno de los mas usados.
+        </p>
         <h4>Ejemplo:</h4>
+        <pre>
+          SELECT P1.ProductModelID, 
+          P1.Name
+          FROM Production.ProductModel P1
+          WHERE ProductModelID IN(3, 4)
+          UNION
+          SELECT P2.ProductModelID, 
+          P2.Name
+          FROM Production.ProductModel P2
+          WHERE P2.ProductModelID IN(3, 4)
+          ORDER BY P1.Name;
+
+          DROP TABLE IF EXISTS dbo.dummy; 
+          SELECT P1.ProductModelID, 
+                 P1.Name
+          INTO dummy
+          FROM Production.ProductModel P1
+          WHERE ProductModelID IN(3, 4)
+          UNION
+          SELECT P2.ProductModelID, 
+                 P2.Name
+          FROM Production.ProductModel P2
+          WHERE P2.ProductModelID IN(3, 4)
+          ORDER BY P1.Name;  
+          GO  
+
+          SELECT *
+          FROM dbo.Dummy;
+        </pre>
       </section>
     </section>
     <div class="nav-bar">
-      <a href="tarea5.html"><i class="fas fa-arrow-left"></i></a>
+      <a href="tarea13.html"><i class="fas fa-arrow-left"></i></a>
       <a href="index.html"><i class="fas fa-home"></i></a>
-      <a href="tarea6.html"><i class="fas fa-arrow-right"></i></a>
+      <a href="tarea15.html"><i class="fas fa-arrow-right"></i></a>
     </div>
     <footer class="nav-bar movil">
       <a href="index.html"><i class="fas fa-home"></i></a>
