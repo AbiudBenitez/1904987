@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/icon.png" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/footer.css" />
     <script
       src="https://kit.fontawesome.com/6d08f8c88b.js"
       crossorigin="anonymous"
     ></script>
-    <title>Tarea #5</title>
+    <title>Tarea #8</title>
   </head>
   <body>
     <header>
@@ -60,27 +59,174 @@
         <li><a href="#">Contacto</a></li>
       </nav>
     </header>
-    <main class="container">
-      <section class="title">
-        <h3>Tarea #5</h3>
+    <main class="container2">
+      <section class="tcenter">
+        <h3>Tarea #8</h3>
       </section>
     </main>
-    <section class="container">
+    <section class="container2">
       <section class="hw">
-        <h4 class="tcenter"></h4>
+        <h4 class="tcenter">Haskell</h4>
+        <p>
+          Haskell ​ es un lenguaje de programación estandarizado
+          multi-propósito, funcionalmente puro, con evaluación no estricta y
+          memorizada, y fuerte tipificación estática. Su nombre se debe al
+          lógico estadounidense Haskell Curry, debido a su aportación al cálculo
+          lambda, el cual tiene gran influencia en el lenguaje.
+        </p>
         <br />
         <h4>Simbolo</h4>
+        <p>
+          En Haskell, y en lo siguiente, "o :: t" quiere decir que la expresión
+          "o" es tiene tipo "t", y "t -> s" es un tipo, específicamente una
+          función, que consume algo de tipo "t" y produce algo de tipo "s". El
+          operador (->) asocia a la derecha, ya que "t -> s -> r" quiere decir
+          "t -> (s -> r)".
+        </p>
+        <br />
+        <p>El tipo Bool</p>
+        <p>
+          Los valores con este tipo representan expresiones lógicas cuyo
+          resultado puede ser True o False.
+        </p>
+        <br />
+        <p>Funciones y operadores</p>
+        <p>(&&) :: Bool -> Bool -> Bool. Conjunción lógica.</p>
+        <p>(||) :: Bool -> Bool -> Bool. Disyunción lógica.</p>
+        <p>not :: Bool -> Bool. Negación lógica.</p>
+        <p>otherwise :: Bool. Función constante que devuelve el valor True.</p>
+        <br />
+        <p>El tipo Int</p>
+        <p>
+          Los valores de este tipo son números enteros de precisión limitada que
+          cubren al menos el intervalo [-2^29, 2^29 - 1] ([minBound, maxBound]).
+        </p>
+        <br />
+        <p>El tipo Integer</p>
+        <p>
+          Los valores de este tipo son números enteros de precisión ilimitada
+          que tienen las mismas funciones y operadores del tipo Int.
+        </p>
+        <br />
+        <p>El tipo Float</p>
+        <p>Los valores de este tipo son números reales. ( 2010, 23.4, 5.7 )</p>
+        <br />
+        <p>El tipo Double</p>
+        <p>
+          Los valores de este tipo son números reales, de mayor rango y con
+          aproximaciones más precisas que los de tipo Float.
+        </p>
+        <br />
+        <p>El tipo Char</p>
+        <p>
+          Los valores de este tipo son caracteres que se encuentran en una masa
+          de alta complejidad de en una suma de caracteres dados con su alta
+          definición.
+        </p>
+        <br />
+        <p>Tuplas</p>
+        <p>
+          Los elementos que forman una tupla pueden ser del mismo o de distintos
+          tipos. Es un conjunto de componentes relacionados. Por ejemplo: ('a',
+          True,3)
+        </p>
+        <br />
         <h4>Sintaxis</h4>
+        <p>
+          Un comentario de una sola línea comienza con ‘--’ y se extiende hasta
+          el final de la línea. Los comentarios de varias líneas comienzan con
+          ’{-’ y se extienden hasta ’-}’. Los comentarios pueden ser anidados.
+        </p>
+        <p>
+          Los comentarios antes de las definiciones de función deben comenzar
+          con ‘{- |’ y los que están junto a los tipos de parámetros con ‘-- ^’
+          para que sean compatibles con Haddock, un sistema para documentar
+          código en Haskell.
+        </p>
+        <p>
+          A diferencia de los operadores, las funciones se utilizan en notación
+          prefija, es decir, el nombre de la función se coloca antes de sus
+          parámetros. Los nombres de las funciones sólo pueden contener
+          caracteres normales, es decir, letras, dígitos, comillas y subrayados.
+          El primer carácter de un identificador de función no puede ser una
+          letra mayúscula ni un dígito.
+        </p>
+        <p>
+          También es posible aplicar parcialmente una función, sin suministrarle
+          todos sus parámetros. Esto genera una nueva función, que puede
+          utilizarse como otra función cualquiera. Esta facilidad es
+          especialmente útil en presencia de orden superior.
+        </p>
+        <br />
         <h4>Esqueletos de los progrmas</h4>
+        <p>
+          Existe un problema obvio con los nombres importados en el espacio de
+          nombres de un módulo. ¿Qué ocurre si dos módulos importados contienen
+          diversas entidades con el mismo nombre? Haskell soluciona este
+          problema usando nombres cualificados. Una declaración de importación
+          puede utilizar la palabra clave qualified para hacer que los nombres
+          importados sean precedidos por el nombre del módulo de donde se
+          importaron. Estos prefijos son seguidos por el carácter`.' sin
+          espacios. [ los nombres cualificados son parte de la sintaxis léxica.
+          Así, A.x y A . x son absolutamente diferentes: el primero es un nombre
+          cualificado y el segundo un uso de la función '.' ] Por ejemplo,
+          usando el módulo Tree anterior:
+        </p>
+        <pre>
+          module Fringe(fringe) where
+          import Tree(Tree(..))
+          fringe :: Tree a -> [a]   -- Una definicion diferente de fringe
+          fringe (Leaf x) = [x]
+          fringe (Branch x y) = fringe x
+          module Main where
+          import Tree ( Tree(Leaf,Branch), fringe )
+          import qualified Fringe ( fringe )  
+          main = do print (fringe (Branch (Leaf 1) (Leaf 2)))
+          print (Fringe.fringe (Branch (Leaf 1) (Leaf 2)))
+        </pre>
+        <br />
         <h4>Aplicaciones a descargar para editar y ejecutar</h4>
+        <p>
+          Existen varios IDEs (Integrated Development Environment, o en español,
+          entornos de desarrollo integrado) y/o plugins que se pueden utilizar
+          para desarrollar aplicaciones en Haskell. La mayoría son open source,
+          pero también existen con licencia comercial.
+        </p>
+        <ul class="list1">
+          <li>IntelliJ plugin for Haskell</li>
+          <li>EclipseFP plugin for Eclipse IDE</li>
+          <li>Colorer plugin for Eclipse IDE</li>
+          <li>Leksah</li>
+          <li>KDevelop</li>
+          <li>Vim</li>
+          <li>Atom</li>
+        </ul>
+        <br />
         <h4>Tipo de paradigma</h4>
+        <p>
+          Este lenguaje de programacion cuenta con los paradigmas de funcional,
+          no estricto, modular y fuertemente tipificado.
+        </p>
+        <br />
         <h4>Ejemplo:</h4>
+        <pre>
+          --Función para calcular las raíces de una ecuación de segundo grado a partir de sus coeficientes
+          raíces :: Float -> Float -> Float -> (Float, Float)
+          raíces a b c
+          | disc >= 0 = ((-b + raizDisc) / denom,
+          (-b - raizDisc) / denom)
+          |otherwise = error "La ecuación tiene raíces complejas"
+          where
+          disc = b*b - 4*a*c
+          raizDisc = sqrt disc
+          denom = 2*a
+        </pre>
       </section>
     </section>
     <div class="nav-bar">
-      <a href="tarea5.html"><i class="fas fa-arrow-left"></i></a>
+      <a href="tarea7.html"><i class="fas fa-arrow-left"></i></a>
       <a href="index.html"><i class="fas fa-home"></i></a>
-      <a href="tarea6.html"><i class="fas fa-arrow-right"></i></a>
+      <a href="tarea9.html"><i class="fas fa-arrow-right"></i></a>
     </div>
     <footer class="nav-bar movil">
       <a href="index.html"><i class="fas fa-home"></i></a>
