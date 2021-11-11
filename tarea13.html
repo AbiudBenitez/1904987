@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/icon.png" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/footer.css" />
     <script
       src="https://kit.fontawesome.com/6d08f8c88b.js"
       crossorigin="anonymous"
     ></script>
-    <title>Tarea #5</title>
+    <title>Tarea #13</title>
   </head>
   <body>
     <header>
@@ -60,27 +59,137 @@
         <li><a href="#">Contacto</a></li>
       </nav>
     </header>
-    <main class="container">
-      <section class="title">
-        <h3>Tarea #5</h3>
+    <main class="container2">
+      <section class="tcenter">
+        <h3>Tarea #13</h3>
       </section>
     </main>
-    <section class="container">
+    <section class="container2">
       <section class="hw">
-        <h4 class="tcenter"></h4>
+        <h4 class="tcenter">PHP</h4>
+        <p>
+          PHP (acrónimo recursivo de PHP: Hypertext Preprocessor) es un lenguaje
+          de código abierto muy popular especialmente adecuado para el
+          desarrollo web y que puede ser incrustado en HTML.
+        </p>
+        <p>
+          En lugar de usar muchos comandos para mostrar HTML (como en C o en
+          Perl), las páginas de PHP contienen HTML con código incrustado que
+          hace "algo" (en este caso, mostrar "¡Hola, soy un script de PHP!). El
+          código de PHP está encerrado entre las etiquetas especiales de
+          comienzo y final
+          <?php y ?>
+          que permiten entrar y salir del "modo PHP".
+        </p>
         <br />
         <h4>Simbolo</h4>
+        <p>PHP admite diez tipos primitivos.</p>
+        <p>Cuatro tipos escalares: boolean, integer, float y string</p>
+        <p>Cuatro tipos compuestos: array, object, callable e interable</p>
+        <p>Y finalmente dos tipos especiales: resource y NULL</p>
+        <p>
+          Puede que existan aún algunas referencias al tipo "double" en el
+          manual. Considere al tipo double como float; los dos nombres existen
+          sólo por razones históricas.
+        </p>
+        <p>
+          El tipo de una variable usualmente no lo declara el programador; al
+          contrario, es decidido en tiempo de ejecución por PHP dependiendo del
+          contexto en el que se emplea dicha variable.
+        </p>
+        <br />
         <h4>Sintaxis</h4>
-        <h4>Esqueletos de los progrmas</h4>
+        <p>
+          Cuando PHP analiza un fichero, busca las etiquetas de apertura y
+          cierre, que son
+          <?php y ?>, y que indican a PHP dónde empezar y finalizar la
+          interpretación del código. Este mecanismo permite embeber a PHP en
+          todo tipo de documentos, ya que todo lo que esté fuera de las
+          etiquetas de apertura y cierre de PHP será ignorado por el analizador.
+        </p>
+        <p>
+          PHP también permite la etiqueta de apertura abreviada
+          <? (la cual está desaconsejada debido a que sólo está disponible si se habilita con la directiva short_open_tag del fichero de configuración php.ini, o si PHP se configuró con la opción --enable-short-tags).</p>
+        </p>
+        <p>
+          Si un fichero contiene solamente código de PHP, es preferible omitir
+          la etiqueta de cierre de PHP al final del mismo. Así se previene la
+          adición de espacios en blanco o nuevas líneas accidentales después de
+          la etiqueta de cierre, lo cual causaría efectos no deseados debido a
+          que PHP comenzará la salida del búfer cuando no había intención por
+          parte del programador de enviar ninguna salida en ese punto del
+          script.
+        </p>
+        <br />
+        <h4>Esqueletos de los programas</h4>
+        <p>
+          Los programas en PHP son puro codigo incrustado en HTML asi que lo
+          primero que se debe de poner en sus programas son las tipicas
+          etiquetas html, despues de haberlas puesto, en el cuerpo del documento
+          se puede iniciar codigo PHP con las etiquetas
+          <?php y tenemos que cerrarlo con la etiqueta ?>
+        </p>
+        <p>Quedaria algo asi:</p>
+        <pre>
+          &lt;html&gt;
+          &lt;head&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;?php
+                //php code;
+                //php code;
+                //php code;
+              ?&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;
+        </pre>
         <h4>Aplicaciones a descargar para editar y ejecutar</h4>
+        <p>
+          Para poder ejecutar programas en PHP se puede desde un software
+          llamado apache el cual nos creara un servidor local en nuestra
+          computadora por el cual podremos compilar paginas php y ver nuestros
+          codigos ya ejecutados.
+        </p>
+        <p>
+          Con este tambien se pueden hacer bases de datos con phpMyAdmin que es
+          una manera sencilla de usar MySQL con PHP.
+        </p>
+        <br />
         <h4>Tipo de paradigma</h4>
+        <p>
+          El lenguaje de programacion es multiparadigma y algunos de ellos son
+          imperativo, funcional, orientado a objetos, procedural y reflexivo
+        </p>
+        <br />
         <h4>Ejemplo:</h4>
+        <pre>
+          &lt;?php
+            $un_bool = TRUE;   // un valor booleano
+            $un_str  = "foo";  // una cadena de caracteres
+            $un_str2 = 'foo';  // una cadena de caracteres
+            $un_int  = 12;     // un número entero
+
+            echo gettype($un_bool); // imprime: boolean
+            echo gettype($un_str);  // imprime: string
+
+            // Si este valor es un entero, incrementarlo en cuatro
+            if (is_int($un_int)) {
+                $un_int += 4;
+            }
+
+            // Si $un_bool es una cadena, imprimirla
+            // (no imprime nada)
+            if (is_string($un_bool)) {
+                echo "Cadena: $un_bool";
+            }
+          ?&gt;
+        </pre>
       </section>
     </section>
     <div class="nav-bar">
-      <a href="tarea5.html"><i class="fas fa-arrow-left"></i></a>
+      <a href="tarea12.html"><i class="fas fa-arrow-left"></i></a>
       <a href="index.html"><i class="fas fa-home"></i></a>
-      <a href="tarea6.html"><i class="fas fa-arrow-right"></i></a>
+      <a href="tarea14.html"><i class="fas fa-arrow-right"></i></a>
     </div>
     <footer class="nav-bar movil">
       <a href="index.html"><i class="fas fa-home"></i></a>
