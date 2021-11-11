@@ -175,6 +175,13 @@ li:hover .sub {
   margin-left: 2rem;
 }
 
+.code {
+  background-color: var(--colorb);
+  color: var(--colorw);
+  padding: 1em;
+  border-radius: 10px;
+}
+
 .nav-buttons {
   margin: 1.5rem;
   border-radius: 10px;
