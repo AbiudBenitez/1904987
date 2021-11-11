@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/icon.png" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/footer.css" />
     <script
       src="https://kit.fontawesome.com/6d08f8c88b.js"
       crossorigin="anonymous"
     ></script>
-    <title>Tarea #5</title>
+    <title>Tarea #11</title>
   </head>
   <body>
     <header>
@@ -60,27 +59,214 @@
         <li><a href="#">Contacto</a></li>
       </nav>
     </header>
-    <main class="container">
-      <section class="title">
-        <h3>Tarea #5</h3>
+    <main class="container2">
+      <section class="tcenter">
+        <h3>Tarea #11</h3>
       </section>
     </main>
-    <section class="container">
+    <section class="container2">
       <section class="hw">
-        <h4 class="tcenter"></h4>
+        <h4 class="tcenter">Cobol</h4>
+        <p>
+          El lenguaje COBOL fue creado en el año 1959 con el objetivo de crear
+          un lenguaje de programación universal que pudiera ser usado en
+          cualquier ordenador y que estuviera orientado principalmente a los
+          negocios, es decir, a la llamada informática de gestión.
+        </p>
         <br />
         <h4>Simbolo</h4>
+        <p>
+          División de Información se utiliza para definir las variables
+          utilizadas en el programa. Para describir los datos en COBOL, uno debe
+          comprender los siguientes términos:
+        </p>
+        <p>Nombre de Datos</p>
+        <p>Número de Nivel</p>
+        <p>Cláusula Imagen</p>
+        <p>Cláusula de Valor</p>
+        <br />
+        <p>Nombre de Datos</p>
+        <p>
+          Nombres de datos debe estar definido en la División de Información
+          antes de utilizarlas en la Division de Procedure. Deben tener un
+          nombre definido por el usuario; palabras reservadas no se pueden
+          utilizar. Nombres de datos da referencia a los lugares de memoria
+          donde se almacenan los datos reales.
+        </p>
+        <br />
+        <p>El siguiente ejemplo muestra el uso de PIC cláusula:</p>
+        <pre>
+          IDENTIFICATION DIVISION.
+          PROGRAM-ID. HELLO.
+
+          DATA DIVISION.
+             WORKING-STORAGE SECTION.
+             01 WS-NUM1 PIC S9(3)V9(2).
+             01 WS-NUM2 PIC PPP999.
+             01 WS-NUM3 PIC S9(3)V9(2) VALUE -123.45.
+             01 WS-NAME PIC A(6) VALUE 'ABCDEF'.
+             01 WS-ID PIC X(5) VALUE 'A121$'.
+
+          PROCEDURE DIVISION.
+             DISPLAY "WS-NUM1 : "WS-NUM1.
+             DISPLAY "WS-NUM2 : "WS-NUM2.
+             DISPLAY "WS-NUM3 : "WS-NUM3.
+             DISPLAY "WS-NAME : "WS-NAME.
+             DISPLAY "WS-ID : "WS-ID.
+          STOP RUN.
+        </pre>
+        <br />
+        <p>Cláusula de Imagen</p>
+        <p>
+          Tipo de datos pueden ser numéricos, alfabéticos o alfanuméricos. Tipo
+          Numérico consiste sólo de dígitos 0 a 9. Alfabético tipo consta de las
+          letras de la A a la Z y espacios. Tipo Alfanumérico consta de dígitos,
+          letras y caracteres especiales.
+        </p>
+        <p>Signo puede utilizarse con datos numéricos. Puede ser + o .</p>
+        <p>
+          Posición del punto decimal se puede usar con datos numéricos. Posición
+          asumida es la posición del punto decimal y no se incluyen en los
+          datos.
+        </p>
+        <p>
+          Longitud define el número de bytes utilizados en el elemento de datos.
+        </p>
+        <br />
         <h4>Sintaxis</h4>
+        <p>La estructura general sería la siguiente...</p>
+        <pre>
+          IDENTIFICATION DIVISION
+             PROGRAM-ID
+             AUTHOR
+             INSTALLATION
+             DATE-WRITTEN
+             DATE-COMPILED
+             SECURITY 
+
+          ENVIRONMENT DIVISION
+
+             CONFIGURATION SECTION
+                SOURCE-COMPUTER
+                OBJECT-COMPUTER 
+                SPECIAL-NAMES
+
+             INPUT-OUTPUT SECTION 
+                FILE CONTROL
+                I-O-CONTROL
+
+          DATA DIVISION
+
+             FILE SECTION
+                ...
+                FICHERO
+                   REGISTRO 
+                ... 
+
+             WORKING-STORATE SECTION
+                ...
+                VARIABLE
+                ... 
+
+             LINKAGE SECTION
+                ...
+                PARAMETRO
+                ... 
+
+          PROCEDURE DIVISION
+             ... 
+             SECCION 
+                PARRAFO
+                   SENTENCIA
+             ...
+        </pre>
+        <br />
         <h4>Esqueletos de los progrmas</h4>
+        <p>
+          Un program COBOL está compuesto de 4 divisiones bien diferenciadas,
+          que son:
+        </p>
+        <p>
+          1. Identification Division (Identificación): Contiene información del
+          programa, el autor, nombre del programa, fecha de creación,
+          comentarios, etc.
+        </p>
+        <p>
+          2. Environment Division (Ambiente): Describe las características que
+          debe tener el ordenador para poder ejecutar el programa, los
+          dispositivos de Entrada / Salida, el compilador, etc.
+        </p>
+        <p>
+          3. Data Division (Información): Incluye los nombres de las variables,
+          las características de las variables, el contenido que van a tener,
+          sus nombres, etc.
+        </p>
+        <p>
+          4. Procedure Division (Procedimiento): Describe las órdenes y
+          operaciones que se van a realizar y el orden de las mismas.
+        </p>
+        <br />
         <h4>Aplicaciones a descargar para editar y ejecutar</h4>
+        <p>
+          Para poder compilar cobol lo que se necesita es un programa llamado
+          Hercules el cual se puede descargar desde windows en
+          www.hercules-390.eu
+        </p>
+        <br />
         <h4>Tipo de paradigma</h4>
+        <p>
+          Cobol es un lenguaje de programacion orientado a negocios, ya que,
+          para la epoca en que fue creado este era la unica opcion para no tener
+          que hacer todos los procesos de una empresa en el lenguaje
+          ensamblador.
+        </p>
+        <br />
         <h4>Ejemplo:</h4>
+        <pre>
+          IDENTIFICATION DIVISION.
+          PROGRAM-ID. R4CZOSRM IS INITIAL PROGRAM.
+   
+         * This COBOL program is generated from the following ruleset: miniloan
+         * Created at 2010/03/05 10:07:02.
+   
+          DATA DIVISION.
+          WORKING-STORAGE SECTION.
+              COPY BRCCONST.
+              COPY BRCCONWS.
+          .
+          .
+          .
+       
+          LINKAGE SECTION.
+              COPY MINILOAN.
+   
+          PROCEDURE DIVISION USING BORROWER LOAN.
+          TASK1-SMF.
+              INITIALIZE BRCC-CONN-AREA
+              MOVE "miniloan" TO BRCC-CONN-RULESET-NAME OF BRCC-R4C-DATA
+              MOVE "20100305" TO BRCC-CONN-CREATE-DATE OF BRCC-R4C-DATA
+              MOVE "100702" TO BRCC-CONN-CREATE-TIME OF BRCC-R4C-DATA
+              MOVE BRCC-CONN-RS OF BRCC-R4C-CONSTANTS TO 
+              BRCC-CONN-CREATE-METHOD OF BRCC-R4C-DATA
+              COPY BRCCINIT.
+              PERFORM TASK2-MAINFLOW
+              COPY BRCCTERM.
+              GOBACK.
+         * RuleFlow mainflow
+          TASK2-MAINFLOW.
+              PERFORM TASK3-MAINFLOW-VALIDATION
+              PERFORM TASK4-MAINFLOW-ELIGIBILITY.
+         * RuleTask mainflow#validation
+          .
+          .
+          .
+        </pre>
       </section>
     </section>
     <div class="nav-bar">
-      <a href="tarea5.html"><i class="fas fa-arrow-left"></i></a>
+      <a href="tarea10.html"><i class="fas fa-arrow-left"></i></a>
       <a href="index.html"><i class="fas fa-home"></i></a>
-      <a href="tarea6.html"><i class="fas fa-arrow-right"></i></a>
+      <a href="tarea12.html"><i class="fas fa-arrow-right"></i></a>
     </div>
     <footer class="nav-bar movil">
       <a href="index.html"><i class="fas fa-home"></i></a>
