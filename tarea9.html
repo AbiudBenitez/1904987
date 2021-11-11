@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/icon.png" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/footer.css" />
     <script
       src="https://kit.fontawesome.com/6d08f8c88b.js"
       crossorigin="anonymous"
     ></script>
-    <title>Tarea #5</title>
+    <title>Tarea #9</title>
   </head>
   <body>
     <header>
@@ -60,27 +59,177 @@
         <li><a href="#">Contacto</a></li>
       </nav>
     </header>
-    <main class="container">
-      <section class="title">
-        <h3>Tarea #5</h3>
+    <main class="container2">
+      <section class="tcenter">
+        <h3>Tarea #9</h3>
       </section>
     </main>
-    <section class="container">
+    <section class="container2">
       <section class="hw">
-        <h4 class="tcenter"></h4>
+        <h4 class="tcenter">R</h4>
+        <p>
+          R nació como una reimplementación de software libre del lenguaje S,
+          adicionado con soporte para ámbito estático. Se trata de uno de los
+          lenguajes de programación más utilizados en investigación científica,
+          siendo además muy popular en los campos de aprendizaje automático
+          (machine learning), minería de datos, investigación biomédica,
+          bioinformática y matemáticas financieras. A esto contribuye la
+          posibilidad de cargar diferentes bibliotecas o paquetes con
+          funcionalidades de cálculo y graficación.
+        </p>
         <br />
         <h4>Simbolo</h4>
+        <p>
+          Empezamos con la clase numérica o doble: es el más común, representan
+          números continuos como el peso o la altura de una persona. Por ejemplo
+          podemos el tipo de clase con al función typeof(), así escribimos:
+        </p>
+        <p>> typeof(10.5)</p>
+        <p>[1] "double"</p>
+        <p>> typeof(54)</p>
+        <p>[1] "double"</p>
+        <br />
+        <p>
+          La clase tipo Entero o Integer: son los números naturales, que se usan
+          para contar elementos de un conjunto, como contar manzanas, personas o
+          gatos. Algo interesante en R, es que cualquier número va hacer tipo
+          numérico, y para indicarle a R que es un numero entero se utiliza la
+          función as.integer(). Por ejemplo al escribir la función typeof(), el
+          resultado sera un numero doble, pero utilizando la función
+          as.integer() dará como resultado un numero entero.
+        </p>
+        <p>> typeof(10)</p>
+        <p>[1] "double"</p>
+        <p>> typeof(as.integer(10))</p>
+        <p>[1] "integer"</p>
+        <br />
         <h4>Sintaxis</h4>
+        <p>
+          La sintaxis en R es muy similar a la de otros lenguajes de
+          programación como JAVA o C. Las normas básicas que definen la sintaxis
+          de R son:
+        </p>
+        <ul class="list1">
+          <li>
+            No se tienen en cuenta los espacios en blancos: podemos o no dejar
+            espacios para que el código se puede ordenar de forma adecuada y
+            poder entenderse.
+          </li>
+          <li>
+            Se distinguen las mayúsculas y minúsculas: para variables en el
+            código, podemos crear diferentes variables con nombres iguales pero
+            alternando mayúsculas y minúsculas.
+          </li>
+          <li>
+            Se pueden incluir comentarios: como vimos anteriormente los
+            comentarios se utilizan para añadir información en el código.
+          </li>
+          <li>
+            No es necesario terminar cada sentencia con el carácter de punto y
+            coma (;): en la mayoría de lenguajes de programación, es obligatorio
+            terminar cada sentencia con este carácter. En en cambio R podemos o
+            no terminar de esta forma.
+          </li>
+          <li>
+            Lenguaje orientado a objetos: todo en R son objetos, las variables,
+            datos, funciones y resultados, que se generan en R son objetos estos
+            se modifican o manipulan con operadores o funciones (que a su vez
+            son objetos).
+          </li>
+        </ul>
+        <br />
         <h4>Esqueletos de los progrmas</h4>
+        <p>
+          El código R está compuesto por una serie de expresiones. Ejemplo de
+          expresiones en R incluyen, expresiones aritméticas, instrucciones de
+          control (condicionales e iterativas) e instrucciones de asignación. A
+          continuación se muestran ejemplos de expresiones:
+        </p>
+        <p># Expresión aritmética</p>
+        <p>127%%10</p>
+        <p>## [1] 7</p>
+        <br />
+        <p>Instrucciones de Asignación</p>
+        <p>
+          Podemos crear nuevos objetos con el operador de asignación <-. Todas
+          las instrucciones de asignación dónde creamos objetos, tienen la misma
+          forma:
+        </p>
+        <p>nombre_objeto <- valor</p>
+        <p>
+          En lenguaje natural podemos traducirlo como a "este objeto asignale el
+          siguiente valor.
+        </p>
+        <br />
+        <p>Llaves</p>
+        <p>
+          Las llaves son usadas para evaluar una serie de expresiones (separadas
+          por nuevas líneas o punto y comas) y, nos devolverán el resultado de
+          la última expresión:
+        </p>
+        <p>{</p>
+        <p>x <- 1</p>
+        <p>y <- 2</p>
+        <p>x + y</p>
+        <p>}</p>
+        <p>## [1] 3</p>
+        <br />
         <h4>Aplicaciones a descargar para editar y ejecutar</h4>
-        <h4>Tipo de paradigma</h4>
+        <p>
+          Entre los editores de texto e IDEs con soporte para R se cuentan:
+          Bluefish,22​Crimson Editor, ConTEXT, Eclipse,23​Emacs (Emacs Speaks
+          Statistics), Geany, jEdit,24​Kate,25​RStudio,26​RKWard,27​Syn,
+          TextMate, Tinn-R, Vim, gedit, SciTE, WinEdt (R Package RWinEdt),
+          notepad++ y Visual Studio.28​
+        </p>
+        <p>
+          Sweave es un procesador de documentos que puede ejecutar código de R
+          incrustado en código de LaTeX y para insertar código, resultados y
+          gráficos en el documento escrito en LaTeX. LyX puede usarse para crear
+          y compilar documentos desarrollados en Sweave. El paquete odfWeave es
+          similar, generando documentos en el formato OpenDocument (ODF);
+          extensiones en estado experimental también permiten generar documentos
+          del tipo presentación u hoja de cálculo.
+        </p>
+        <br />
         <h4>Ejemplo:</h4>
+        <pre>
+          require(maps) # activación de librería
+          require(mapproj) # se usará para projection="polyconic"
+            # Cargar los datos
+            # unemp incluye datos para condados de los Estados Unidos continentales. Se excluyen Alaska, Hawaii, Puerto Rico, y pequeñas ciudades de Virginia
+          data(unemp) # Datos de desempleo
+          data(county.fips) # mapa de los condados
+
+          # Se define la paleta de colores. Escala de grises en este caso. En el original, rosas y magenta.
+          colors = c("#F1EEF6", "#D3D3D3", "#B9B9B9", "#787878", "#2E2E2E", "#111111") # Colores
+          unemp$colorBuckets <- as.numeric(cut(unemp$unemp, c(0, 2, 4, 6, 8, 10, 100))) # Rangos de desempleo
+          leg.txt <- c("2%", "2-4%", "4-6%", "6-8%", "8-10%", ">10%") # Etiquetas de los rangos
+
+          # Se alinean los datos con definiciones de mapa (parciales) de emparejamientos de estados, 
+          #         nombre de condados, que incluyen varios polígonos para algunos condados
+          cnty.fips <- county.fips$fips[match(map("county", plot=FALSE)$names, county.fips$polyname)]
+          colorsmatched <- unemp$colorBuckets [match(cnty.fips, unemp$fips)]
+
+          # Se dibuja el mapa. Luego se guarda en JPEG.
+              jpeg("desempleo Estados Unidos 2009.jpg", width = 1024, height=750) # Crea imagen de 1024 x 750 pixeles.
+              map("county", col = colors[colorsmatched], fill = TRUE, resolution = 0, lty = 0, projection = "polyconic") # Mapa general del desempleo en grises
+              map("state", col = "white", fill = FALSE, add = TRUE, lty = 1, lwd = 0.2, projection="polyconic") # Mapa de los estados sobre puesto
+              title(main="Desempleo por condado, año 2009", cex.main = 3,
+              sub="Creado con información de la solución de J del 'Choropleth Challenge' 
+              más info en http://blog.revolutionanalytics.com/2009/11/choropleth-challenge-result.html")
+            # Se creó el título del mapa
+          legend("top", leg.txt, horiz = T, fill = colors, bg="#F1F1F1", cex=1.5) # Indicación de los colores por su rango
+          map.axes() # Para colocar ejes con la latitud y longitud
+          dev.off()
+          # Para ver los límites del condado débiles, vaya a RGui : File/SaveAs/PDF
+        </pre>
       </section>
     </section>
     <div class="nav-bar">
-      <a href="tarea5.html"><i class="fas fa-arrow-left"></i></a>
+      <a href="tarea8.html"><i class="fas fa-arrow-left"></i></a>
       <a href="index.html"><i class="fas fa-home"></i></a>
-      <a href="tarea6.html"><i class="fas fa-arrow-right"></i></a>
+      <a href="tarea10.html"><i class="fas fa-arrow-right"></i></a>
     </div>
     <footer class="nav-bar movil">
       <a href="index.html"><i class="fas fa-home"></i></a>
