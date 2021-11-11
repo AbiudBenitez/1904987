@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/icon.png" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/footer.css" />
     <script
       src="https://kit.fontawesome.com/6d08f8c88b.js"
       crossorigin="anonymous"
     ></script>
-    <title>Tarea #5</title>
+    <title>Tarea #15</title>
   </head>
   <body>
     <header>
@@ -60,27 +59,206 @@
         <li><a href="#">Contacto</a></li>
       </nav>
     </header>
-    <main class="container">
-      <section class="title">
-        <h3>Tarea #5</h3>
+    <main class="container2">
+      <section class="tcenter">
+        <h3>Tarea #15</h3>
       </section>
     </main>
-    <section class="container">
+    <section class="container2">
       <section class="hw">
-        <h4 class="tcenter"></h4>
+        <h4 class="tcenter">Ruby</h4>
+        <p>
+          Ruby es un lenguaje con un balance cuidado. Su creador, Yukihiro
+          “Matz” Matsumoto, mezcló partes de sus lenguajes favoritos (Perl,
+          Smalltalk, Eiffel, Ada y Lisp) para formar un nuevo lenguaje que
+          incorporara tanto la programación funcional como la imperativa.
+        </p>
         <br />
         <h4>Simbolo</h4>
+        <p>Integer</p>
+        <p>
+          Entero dos, si 31 o menos (cuatro bytes), es ejemplo Fixnum. Si es
+          así, es ejemplo Bignum.
+        </p>
+        <p>
+          gama de enteros de -2 o -2 30-2 30-1 62-2 62-1. Entero en esta gama es
+          la claseFixnumnúmero entero objeto almacenado fuera del alcance de
+          esta clase de objetosbignum.
+        </p>
+        <p>
+          Se puede utilizar un símbolo de preámbulo opcional frente a un número
+          entero, un indicador base opcional (0 para octal, hexadecimal 0x
+          corresponden, 0b correspondiente a binario), seguido de una serie de
+          números. carácter de subrayado cadena numérica se ignoran.
+        </p>
+        <p>
+          Usted puede obtener un carácter ASCII o una secuencia de escape valor
+          entero con signos de interrogación.
+        </p>
+        <br />
+        <p>float</p>
+        <p>
+          Rubí apoyo de coma flotante. Son números con decimales.FloatFloat es
+          una clase de objetos.
+        </p>
+        <br />
+        <p>operación aritmética</p>
+        <p>Los operadores aritméticos: + - * /; operario ** Índice</p>
+        <p>tipo de cadena</p>
+        <p>
+          cadena rubí es simplemente una secuencia de bytes de 8 bits, que es el
+          objeto de la clase String.
+        </p>
+        <p>
+          Cadena de signos y barras invertidas comillas dobles permiten cadenas
+          de reemplazo no pueden reemplazar las comillas simples, y sólo permite
+          el uso de \\ y \ 'dos ​​barra invertida.
+        </p>
+        <br />
+        <p>Tipo rango</p>
+        <p>
+          El rango es de un valor inicial y un valor final mediante el
+          establecimiento de representar. La gama de s..e y s utilizable ... e
+          de construir, o por Range.new construido.
+        </p>
+        <p>
+          Obra realizada con .. correr a partir del valor inicial gama de poner
+          fin a valor (incluyendo los valores extremos). ... Construidos con un
+          rango de ejecución del valor de arranque para poner fin a valor (valor
+          final no está incluido). Cuando se utiliza como un iterador utilizar
+          la gama volverá cada valor en la secuencia.
+        </p>
+        <br />
         <h4>Sintaxis</h4>
+        <p>
+          La sintaxis de Ruby es similar a la de Perl o Python. La definición de
+          clases y métodos está definida por palabras clave. Sin embargo, en
+          Perl, las variables no llevan prefijos. Cuando se usa, un prefijo
+          indica el ámbito de las variables. La mayor diferencia con C y Perl es
+          que las palabras clave son usadas para definir bloques de código sin
+          llaves. Los saltos de línea son significativos y son interpretados
+          como el final de una sentencia; el punto y coma tiene el mismo uso. A
+          diferencia de Python, la sangría no es significativa.
+        </p>
+        <br />
+        <p>
+          Una de las diferencias entre Ruby y Python y Perl es que Ruby mantiene
+          todas sus variables de instancia privadas dentro de las clases y solo
+          la expone a través de métodos de acceso (attr_writer, attr_reader,
+          etc.). A diferencia de los métodos get y set de otros lenguajes como
+          C++ o Java, los métodos de acceso en Ruby pueden ser escritos con una
+          sola línea de código. Como la invocación de estos métodos no requiere
+          el uso de paréntesis, es trivial cambiar una variable de instancia en
+          una función sin tocar una sola línea de código o refactorizar dicho
+          código. Los descriptores de propiedades de Python son similares pero
+          tienen una desventaja en el proceso de desarrollo. Si uno comienza en
+          Python usando una instancia de variable expuesta públicamente y
+          después cambia la implementación para usar una instancia de variable
+          privada expuesta a través de un descriptor de propiedades, el código
+          interno de la clase necesitará ser ajustado para usar la variable
+          privada en vez de la propiedad pública. Ruby elimina está decisión de
+          diseño obligando a todas las variables de instancia a ser privadas,
+          pero también proporciona una manera sencilla de declarar métodos set y
+          get. Esto mantiene el principio de que en Ruby no se puede acceder a
+          los miembros internos de una clase desde fuera de esta; en lugar de
+          esto se pasa un mensaje (se invoca un método) a la clase y recibe una
+          respuesta.
+        </p>
+        <br />
         <h4>Esqueletos de los progrmas</h4>
+        <p>
+          La distribución oficial de Ruby incluye irb (Interactive Ruby Shell),
+          un intérprete interactivo de línea de comandos que puede ser usado
+          para probar código de manera rápida. El siguiente fragmento de código
+          representa una muestra de una sesión usando irb:
+        </p>
+        <pre>
+          $ irb
+          irb(main):001:0> puts "Hola mundo"
+          Hola mundo
+          => nil
+          irb(main):002:0> 1+2
+          => 3
+        </pre>
         <h4>Aplicaciones a descargar para editar y ejecutar</h4>
+        <p>Hay varias maneras de instalar Ruby:</p>
+        <p>
+          Si lo necesitas en un sistema tipo UNIX, la manera más sencilla de
+          instalarlo es usando el sistema de gestión de paquetes de la
+          distribución. Sin embargo, la versión de Ruby provista puede no ser la
+          más nueva.
+        </p>
+        <p>
+          Se pueden usar los instaladores para instalar una o varias versiones
+          de Ruby. Incluso existe un instalador para Windows.
+        </p>
+        <p>
+          Los gestores te ayudan a cambiar entre varias versiones de Ruby en tu
+          sistema.
+        </p>
+        <p>Y finalmente, puedes compilar Ruby desde el código fuente.</p>
+        <p>
+          En Windows 10, también puedes usar el subsistema de Windows para Linux
+          para instalar una de las distribuciones de Linux soportadas y usar
+          cualquier método de instalación disponible en ese sistema.
+        </p>
+        <br />
         <h4>Tipo de paradigma</h4>
+        <p>
+          Este lenguaje de programacion es orientado a objetos casi en su
+          totalidad, ya que, literalmente se le puede aplicar algun metodo a
+          carateres primitivos como numeros, algo que no es muy comun en otros
+          lenguajes de programacion.
+        </p>
+        <br />
         <h4>Ejemplo:</h4>
+        <pre>
+          class Mamifero 
+           def respira
+             puts "inhala y exhala"
+           end
+          end
+          class Gato < Mamifero
+           def habla
+             puts "Meow"
+           end
+          end
+          misifus = Gato.new
+          misifus.respira
+          misifus.habla
+        </pre>
+        <br />
+        <pre>
+          class Ave
+           def acicala
+             puts "Estoy limpiando mis plumas."
+           end
+           def vuela
+             puts "Estoy volando."
+           end
+          end
+          class Pinguino < Ave
+           def vuela
+             puts "Lo siento, prefiero nadar."
+           end
+          end
+          class Aguila < Ave
+          end
+          puts "Pinguino"
+          p = Pinguino.new
+          p.acicala
+          p.vuela
+          puts "Aguila"
+          a = Aguila.new
+          a.acicala
+          a.vuela
+        </pre>
       </section>
     </section>
     <div class="nav-bar">
-      <a href="tarea5.html"><i class="fas fa-arrow-left"></i></a>
+      <a href="tarea14.html"><i class="fas fa-arrow-left"></i></a>
       <a href="index.html"><i class="fas fa-home"></i></a>
-      <a href="tarea6.html"><i class="fas fa-arrow-right"></i></a>
+      <a href="tarea16.html"><i class="fas fa-arrow-right"></i></a>
     </div>
     <footer class="nav-bar movil">
       <a href="index.html"><i class="fas fa-home"></i></a>
