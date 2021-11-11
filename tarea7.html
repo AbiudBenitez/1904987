@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/icon.png" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/footer.css" />
     <script
       src="https://kit.fontawesome.com/6d08f8c88b.js"
       crossorigin="anonymous"
     ></script>
-    <title>Tarea #5</title>
+    <title>Tarea #7</title>
   </head>
   <body>
     <header>
@@ -60,27 +59,183 @@
         <li><a href="#">Contacto</a></li>
       </nav>
     </header>
-    <main class="container">
-      <section class="title">
-        <h3>Tarea #5</h3>
+    <main class="container2">
+      <section class="tcenter">
+        <h3>Tarea #7</h3>
       </section>
     </main>
-    <section class="container">
+    <section class="container2">
       <section class="hw">
-        <h4 class="tcenter"></h4>
+        <h4 class="tcenter">Scheme</h4>
+        <br />
+        <p>
+          Scheme es un lenguaje de programación funcional (si bien impuro pues
+          sus estructuras de datos no son inmutables) y un dialecto de Lisp. Fue
+          desarrollado por Guy L. Steele y Gerald Jay Sussman en la década de
+          los setenta e introducido en el mundo académico a través de una serie
+          de artículos conocidos como los Lambda Papers de Sussman y Steele.
+        </p>
+        <p>
+          La filosofía de Scheme es minimalista. Su objetivo no es acumular un
+          gran número de funcionalidades, sino evitar las debilidades y
+          restricciones que hacen necesaria su adición. Así, Scheme proporciona
+          el mínimo número posible de nociones primitivas, construyendo todo lo
+          demás a partir de un reducido número de abstracciones. Por ejemplo, el
+          mecanismo principal para el control de flujo son las llamadas
+          recursivas.
+        </p>
         <br />
         <h4>Simbolo</h4>
+        <p>Comentarios</p>
+        <p>
+          Para agregar un comentario en Scheme se inicia con un punto y coma (;)
+          y continúan hasta el final de la línea.
+        </p>
+        <br />
+        <p>Variables</p>
+        <p>
+          Las variables son dinámicamente tipadas. Para asociarlas a un valor
+          concreto, podemos usar define, una expresión let, o alguna de sus
+          variantes. Las variables asignadas en el primer nivel usando define
+          están en ámbito global
+        </p>
+        <p>
+          Las variables asignadas mediante let ven su ámbito reducido al cuerpo
+          de dicho let:
+        </p>
+        <br />
+        <p>Procedimientos</p>
+        <p>
+          Las funciones o procedimientos son objetos de primera clase en Scheme.
+          Pueden ser asignados a variables.
+        </p>
+        <br />
+        <p>Tipos de datos</p>
+        <p>
+          Otros tipos de datos en Scheme son los enteros, racionales, reales,
+          complejos, símbolos, cadenas, y puertos, listas asociativas, tablas
+          hash, vectores, arrays y estructuras.
+        </p>
+        <p>
+          La mayoría de implementaciones proporciona lo que se conoce como una
+          torre numérica completa, así como aritmética exacta e inexacta.
+        </p>
+        <p>
+          Los valores booleanos se representan mediante los símbolos #t y #f. En
+          realidad, cualquier valor distinto de #f (incluyendo la lista vacía)
+          se interpreta como 'verdadero' en un contexto adecuado, mientras que
+          en otros dialectos de Lisp la lista vacía es interpretada como el
+          valor booleano falso.
+        </p>
+        <br />
         <h4>Sintaxis</h4>
-        <h4>Esqueletos de los progrmas</h4>
+        <p>
+          Scheme, como todos los dialectos de Lisp, tiene una sintaxis muy
+          reducida comparado con muchos otros lenguajes. No necesita reglas de
+          precedencia en su gramática, ya que usa notación prefija para todas
+          las llamadas a función. En el mundo de Lisp tales expresiones son
+          conocidas como S-expressions.
+        </p>
+        <p>
+          El poder característico de los Lisp reside en la simpleza de su
+          sintaxis homoicónica hecha de listas anidadas, que refleja la
+          estructura del árbol de sintaxis abstracta del programa y lo pone a
+          disposición del programador. Esto facilita la metaprogramación
+          mediante macros. Las macros de Scheme permiten adaptarlo a nuevos
+          dominios con facilidad, por ejemplo, para añadir soporte a la
+          programación orientada a objetos. Existe por ejemplo una extensión que
+          implementa un sistema de objetos escrito en menos de mil líneas de
+          código de Scheme, incluyendo comentarios.1​ Scheme proporciona un
+          sistema de macros higiénico que, aunque no tan potente como el de
+          Common Lisp, es mucho más seguro y, con frecuencia, sencillo de
+          utilizar. La ventaja de un sistema de macros de este tipo (que también
+          se encuentra en otros lenguajes, como Dylan) es que evita
+          automáticamente colisiones entre los nombres usados en la definición
+          de la macro y en el contexto en que ésta se expande. En contrapartida,
+          las macros higiénicas no pueden introducir nuevos símbolos.
+        </p>
+        <br />
+        <h4>Esqueletos de los programas</h4>
+        <p>Variables locales y globales</p>
+        <p>
+          Las variables son dinámicamente tipadas. Dicho de otra forma, no se
+          debe especificar lo que se va a guardar dentro de la misma. Las
+          variables globales se nombran con la instrucción (define nombre valor)
+          Por ejemplo:
+        </p>
+        <p>(define variable 5)</p>
+        <p>
+          Por otro lado, las variables locales se definen con la instrucción (
+          let variables función). Por ejemplo: sumar dos números guardados en
+          una variable local
+        </p>
+        <pre>
+          (let 
+          ;variables de la operación 
+          ((numero1 5) 
+          (numero2 7)) 
+          ;instrucción que suma los números, es decir, la función 
+          (+ numero1 numer2))
+        </pre>
+        <br />
+        <p>Creando Procedimientos Completos</p>
+        <p>
+          Utilizando la instrucción (define (nombre args) función) se crea un
+          procedimiento dentro del programa. En mi caso, voy a implementar la
+          instrucción del ejemplo anterior en una función
+        </p>
+        <pre>
+          ; función que suma dos números agregados como argumento 
+          (define (suma num1 num2) 
+          ; implementación del let anterior, aunque no es estrictamente necesario 
+          (let 
+          ;variables de la operación 
+          ((numero1 num1) 
+          (numero2 num2)) 
+          ; instrucción que suma los números, es decir, la función 
+          (+ numero1 numero2)) 
+        </pre>
+        <br />
         <h4>Aplicaciones a descargar para editar y ejecutar</h4>
+        <p>
+          Desde linux se puede ejecutar cualquier archivo .scm istalando con la
+          linea de comando sudo apt-get install mit-scheme, una vez instalado lo
+          unico que se ocupa es poner una linea de comando iniciando con la
+          palabra load seguido del nombre de nuestro archivo junto con su
+          extension.
+        </p>
+        <p>
+          Tambien se puede optar por buscar un compilador online el cual nos
+          ayuda a poder compilar desde cualquier parte.
+        </p>
+        <br />
         <h4>Tipo de paradigma</h4>
+        <p>
+          Scheme es un dialecto de Lisp, es un lenguaje interpretado, muy
+          expresivo y soporta varios paradigmas.
+        </p>
+        <br />
         <h4>Ejemplo:</h4>
+        <pre>
+          (define (T) ;lo que hacemos con esta función es la figura con la que se ;llenara el triángulo
+          (display "*"))
+          (define (dibuje cant) ;esta funcion me dibuja los "*" pasando un espacio :entre ellos
+          (do ((i 0 (+ i 1)))
+          ((= i cant) )
+          (t)
+          (display " ")))
+          (define (triangulo) ;y esta es la que me dibuja el triangulo aquí defino ;que el tamaño sea de 10 *'s
+          (do ((i 1 (+ i 1)));observa como se hace el ciclo :D
+          ((= i 10) )
+          (dibuje i);llamada a la funcion
+          (newline)));pasa renglon
+        </pre>
       </section>
     </section>
     <div class="nav-bar">
-      <a href="tarea5.html"><i class="fas fa-arrow-left"></i></a>
+      <a href="tarea6.html"><i class="fas fa-arrow-left"></i></a>
       <a href="index.html"><i class="fas fa-home"></i></a>
-      <a href="tarea6.html"><i class="fas fa-arrow-right"></i></a>
+      <a href="tarea8.html"><i class="fas fa-arrow-right"></i></a>
     </div>
     <footer class="nav-bar movil">
       <a href="index.html"><i class="fas fa-home"></i></a>
