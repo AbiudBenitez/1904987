@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/icon.png" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/footer.css" />
     <script
       src="https://kit.fontawesome.com/6d08f8c88b.js"
       crossorigin="anonymous"
     ></script>
-    <title>Tarea #15</title>
+    <title>Tarea #16</title>
   </head>
   <body>
     <header>
@@ -56,23 +57,56 @@
             <li><a href="tarea22.html">Tarea 22</a></li>
           </ul>
         </li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
       </nav>
     </header>
     <main class="container2">
       <section class="tcenter">
-        <h3>Tarea #15</h3>
+        <h3>Tarea #16</h3>
       </section>
     </main>
     <section class="container2">
       <section class="hw">
-        <h4></h4>
+        <h4 class="tcenter">Tarea 16: Conversión de Temperatura</h4>
+        <p>
+          Elabore un programa en JAVA que mediante un Menú de opciones permita
+          calcular la conversión de escala de temperatura:
+        </p>
+        <ul class="list1">
+          <li>De grados Centígrados a grados Farenheit</li>
+          <li>De grados Farenheita grados Centígrados</li>
+        </ul>
+        <p>
+          (Nota: Usar el cuadro de dialogo, showOptionDialog(), para seleccionar
+          : °C -> °F y otro °F -> °C, )
+        </p>
+        <br />
+        <pre class="code">
+    import javax.swing.JOptionPane;
+    public class Tarea {
+        public static void main(String[] args) {
+            String[] options={"°C->°F", "°F->°C"};
+            int v = JOptionPane.showOptionDialog(null, "Ingrese su temperatura", "Teamperatura", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, optio[0]);
+            String Entrada;
+            Double Temperatura;
+            Entrada = JOptionPane.showInputDialog("Ingresa tu temperatura: ");
+            Temperatura = Double.parseDouble(Entrada);
+            if (v == 0) {
+                Temperatura = (Temperatura * 1.8) + 32;
+                JOptionPane.showMessageDialog(null, "Su temperatura es de: " + Temperatura + " °F");
+            }else{
+                Temperatura = (Temperatura - 32) / 1.8;
+                JOptionPane.showMessageDialog(null, "Su temperatura es de: " + Temperatura + " °C");
+            }
+        }
+    }
+        </pre>
       </section>
     </section>
     <div class="nav-bar">
-      <a href="tarea5.html"><i class="fas fa-arrow-left"></i></a>
+      <a href="tarea15.html"><i class="fas fa-arrow-left"></i></a>
       <a href="index.html"><i class="fas fa-home"></i></a>
-      <a href="tarea6.html"><i class="fas fa-arrow-right"></i></a>
+      <a href="tarea17.html"><i class="fas fa-arrow-right"></i></a>
     </div>
     <footer class="nav-bar movil">
       <a href="index.html"><i class="fas fa-home"></i></a>
