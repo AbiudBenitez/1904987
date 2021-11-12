@@ -152,6 +152,15 @@ li:hover .sub {
   border-radius: 10px;
 }
 
+.container3 {
+  background-color: var(--color1);
+  min-height: 68vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .bio > img {
   width: 50%;
   display: flex;
